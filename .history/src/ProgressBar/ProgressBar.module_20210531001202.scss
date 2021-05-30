@@ -1,0 +1,37 @@
+.ProgressBar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 500px;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.Ball {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 5px solid var(--main-color);
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  &[data-active="false"]
+}
+
+.Progress {
+  height: 5px;
+  background-color: var(--second-color);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.ProgressInner {
+  @extend .Progress;
+  background-color: var(--main-color);
+}

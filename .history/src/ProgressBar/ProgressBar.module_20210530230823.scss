@@ -1,0 +1,23 @@
+.ProgressBar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 5px solid var(--main-color);
+  background-color: white;
+}
+
+.Progress {
+  height: 5px;
+  background-color: var(--main-color);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  
+}

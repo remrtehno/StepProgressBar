@@ -1,0 +1,17 @@
+.ProgressBar {
+  position: relative;
+}
+
+.Ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 5px solid var(--main-color);
+  background-color: white;
+}
+
+.Progress {
+  height: 5px;
+  width: 100%;
+  background-color: var(--main-color);
+}
